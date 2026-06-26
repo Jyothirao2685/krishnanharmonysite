@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symphony Heights | Rhythm of Life</title>
+    <meta name="description" content="Refined Living, Elevated with Intention. A premium single tower residential community.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Symphony Heights Specific Overrides */
+        :root {
+            --primary-dark: #1A1A24; /* Deeper slate blue/black */
+            --primary: #2C2C3D;
+            --primary-light: #5A5A72;
+            --accent: #D4AF37; /* Metallic Gold */
+            --accent-hover: #E8C34B;
+        }
+        
+        .hero-bg {
+            background-color: #2a2a2a;
+        }
+        
+        .zone-card {
+            background: var(--surface);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            border-top: 4px solid var(--accent);
+            height: 100%;
+        }
+        
+        .zone-title {
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .zone-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-body);
+        }
+        
+        .zone-list li i {
+            color: var(--accent);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                Symphony Heights
+            </div>
+            <nav class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#lifestyle-zones">Lifestyle Zones</a>
+                <a href="#clubhouse">Clubhouse</a>
+            </nav>
+            <button class="btn btn-primary">Enquire Now</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-glass" style="background-image: url('assets/heroimagesymphony.png'); background-size: cover; background-position: center; background-attachment: fixed;">
+        <div class="container">
+            <div class="glass-card">
+                <span class="hero-tagline">Refined Living, Elevated with Intention</span>
+                <h1>Rhythm of Life.</h1>
+                <p style="font-size: 1.15rem; color: rgba(255,255,255,0.9); margin-bottom: 40px;">A modern residential tower redefining urban living through contemporary design, privacy, and premium amenities.</p>
+                
+                <div class="hero-stats" style="margin-bottom: 40px; display: flex; gap: 32px;">
+                    <div class="stat-item">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label">Acres</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Exclusive Tower</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">128</span>
+                        <span class="stat-label">Premium Units</span>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 16px;">
+                    <a href="#overview" class="btn btn-accent" style="padding: 14px 32px;">Explore Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Facts -->
+    <section id="overview" class="section-bg">
+        <div class="container">
+            <div class="grid-2">
+                <div class="facts-wrapper" style="background: var(--primary-dark);">
+                    <h3 style="margin-bottom: 30px; font-size: 2rem;">Quick Facts</h3>
+                    <div class="fact-grid" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+                        <div class="fact-box">
+                            <h4>Project Area</h4>
+                            <p>2 Acres</p>
+                        </div>
+                        <div class="fact-box">
+                            <h4>Configuration</h4>
+                            <p>3 & 3.5 BHK</p>
+                        </div>
+                        <div class="fact-box">
+                            <h4>Total Units</h4>
+                            <p>128</p>
+                        </div>
+                        <div class="fact-box">
+                            <h4>Structure</h4>
+                            <p>G + 19 Floors</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="section-title">Core USPs</h2>
+                    <p class="section-subtitle">Premium low-density living with privacy-focused planning and large private balconies.</p>
+                    
+                    <div class="feature-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-building"></i></div>
+                            <div class="feature-text">
+                                <h4>Single Tower exclusivity</h4>
+                                <p>Minimal shared walls, premium finishes, and quiet luxury design.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="feature-text">
+                                <h4>Cascading Deck Design</h4>
+                                <p>Staggered planning enabling large balconies, cross ventilation, and increased natural light.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bridge"></i></div>
+                            <div class="feature-text">
+                                <h4>Elevated Walkway</h4>
+                                <p>A car-free, landscaped connection linking amenities for a scenic walking experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lifestyle Zones -->
+    <section id="lifestyle-zones">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 60px;">
+                <h2 class="section-title">Three Lifestyle Zones</h2>
+                <p class="section-subtitle" style="margin: 0 auto;">Designed for distinct purposes—play, relaxation, wellness, and community interaction.</p>
+            </div>
+            
+            <div style="margin-bottom: 60px; text-align: center;">
+                <img src="assets/projectplan3dview.png" alt="3D Project Plan" class="zoomable" style="max-width: 100%; border-radius: var(--border-radius); box-shadow: var(--shadow-md); cursor: zoom-in;">
+                <p class="section-subtitle" style="margin: 16px auto 0;">Click to zoom</p>
+            </div>
+
+            <div class="grid-3">
+                <!-- Ground -->
+                <div class="zone-card">
+                    <h3 class="zone-title"><i class="fa-solid fa-tree"></i> Ground Floor</h3>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; color: var(--primary-light);">Interactive & Active Spaces</p>
+                    <ul class="zone-list">
+                        <li><i class="fa-solid fa-check"></i> Entrance & Drop-off Plaza</li>
+                        <li><i class="fa-solid fa-check"></i> Sculpture Lawn</li>
+                        <li><i class="fa-solid fa-check"></i> Tot Lot & Skating Rink</li>
+                        <li><i class="fa-solid fa-check"></i> Cricket Practice Pitch</li>
+                        <li><i class="fa-solid fa-check"></i> Pet Park</li>
+                    </ul>
+                </div>
+
+                <!-- Podium -->
+                <div class="zone-card">
+                    <h3 class="zone-title"><i class="fa-solid fa-people-group"></i> Podium</h3>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; color: var(--primary-light);">Community & Wellness</p>
+                    <ul class="zone-list">
+                        <li><i class="fa-solid fa-check"></i> Elevated Walkway Connection</li>
+                        <li><i class="fa-solid fa-check"></i> Wellness Lawn & Yoga Deck</li>
+                        <li><i class="fa-solid fa-check"></i> Double Height Party Hall</li>
+                        <li><i class="fa-solid fa-check"></i> Al Fresco Dining & BBQ</li>
+                        <li><i class="fa-solid fa-check"></i> WFH Centre & Gym</li>
+                    </ul>
+                </div>
+
+                <!-- Rooftop -->
+                <div class="zone-card">
+                    <h3 class="zone-title"><i class="fa-solid fa-cloud-sun"></i> Rooftop</h3>
+                    <p style="margin-bottom: 20px; font-size: 0.9rem; color: var(--primary-light);">Premium Recreation</p>
+                    <ul class="zone-list">
+                        <li><i class="fa-solid fa-check"></i> Main & Kids Swimming Pool</li>
+                        <li><i class="fa-solid fa-check"></i> Double Height Badminton Court</li>
+                        <li><i class="fa-solid fa-check"></i> Futsal Court</li>
+                        <li><i class="fa-solid fa-check"></i> Spa & Changing Rooms</li>
+                        <li><i class="fa-solid fa-check"></i> Sculpture Garden</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture & Interiors -->
+    <section id="architecture" class="section-bg">
+        <div class="container">
+            <div class="grid-2">
+                <div>
+                    <h2 class="section-title">Cascading Deck Architecture</h2>
+                    <p class="section-subtitle">A unique architectural identity providing unmatched benefits.</p>
+                    
+                    <div class="amenity-list" style="grid-template-columns: 1fr 1fr;">
+                        <div class="amenity-item"><i class="fa-solid fa-wind"></i> Better Airflow</div>
+                        <div class="amenity-item"><i class="fa-solid fa-sun"></i> Increased Light</div>
+                        <div class="amenity-item"><i class="fa-solid fa-eye-slash"></i> Better Privacy</div>
+                        <div class="amenity-item"><i class="fa-solid fa-leaf"></i> Urban Gardening</div>
+                    </div>
+
+                    <h2 class="section-title" style="margin-top: 60px;">Interior Highlights</h2>
+                    <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 20px;">
+                        <li><i class="fa-solid fa-star" style="color: var(--accent); margin-right: 8px;"></i> Premium Finishes</li>
+                        <li><i class="fa-solid fa-star" style="color: var(--accent); margin-right: 8px;"></i> Spacious Living Areas</li>
+                        <li><i class="fa-solid fa-star" style="color: var(--accent); margin-right: 8px;"></i> Cross Ventilation</li>
+                        <li><i class="fa-solid fa-star" style="color: var(--accent); margin-right: 8px;"></i> Uninterrupted Views</li>
+                    </ul>
+                </div>
+                
+                <div class="grid-2" style="gap: 20px;">
+                    <div class="img-placeholder aspect-portrait">
+                        <img src="assets/groundfloorfullimage.png" alt="Ground Floor View">
+                    </div>
+                    <div class="img-placeholder aspect-portrait" style="transform: translateY(40px);">
+                        <img src="assets/podiumximage1.png" alt="Podium Walkway">
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 80px; text-align: center;">
+                <h2 class="section-title">Ground Floor Master Plan</h2>
+                <div class="img-contain zoomable" style="margin-top: 40px;">
+                    <img src="assets/Screenshot 2026-06-26 205705.png" alt="Master Plan" style="max-width: 100%; max-height: 80vh;">
+                </div>
+                <p class="section-subtitle" style="margin: 16px auto 0;">Click to zoom</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Symphony Heights</h3>
+                    <p>Refined Living, Elevated with Intention. A premium contemporary community.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="#overview">Overview</a>
+                        <a href="#lifestyle-zones">Lifestyle Zones</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <a href="#" class="btn btn-outline" style="color:white; border-color:white; margin-top: 16px;">Contact Sales</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Symphony Heights. All Rights Reserved.</p>
+                <p>Privacy First Design</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="project-switcher">
+        <span>Looking for nature-inspired living?</span>
+        <a href="index.html" class="btn btn-accent" style="padding: 8px 16px; font-size: 0.85rem;">View Harmony Gardens</a>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="expandedImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
