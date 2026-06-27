@@ -1,31 +1,46 @@
+// Tab Functionality for Unit Plans
+function openTab(tabId) {
+    // Remove active class from all buttons
+    const buttons = document.querySelectorAll('.tab-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    
+    // Remove active class from all contents
+    const contents = document.querySelectorAll('.tab-content');
+    contents.forEach(content => content.classList.remove('active'));
+    
+    // Add active class to clicked button and target content
+    event.currentTarget.classList.add('active');
+    document.getElementById(tabId).classList.add('active');
+}
+
+// Hero Slider Functionality
+let slideIndex = 0;
+const slides = document.querySelectorAll('.hero-slide');
+
+function showSlide(index) {
+    if(slides.length === 0) return;
+    
+    if (index >= slides.length) slideIndex = 0;
+    if (index < 0) slideIndex = slides.length - 1;
+    
+    slides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    
+    slides[slideIndex].style.display = 'block';
+}
+
+function moveHero(n) {
+    slideIndex += n;
+    showSlide(slideIndex);
+}
+
+// Auto slide every 5 seconds
+setInterval(() => {
+    moveHero(1);
+}, 5000);
+
+// Initialize slider on load
 document.addEventListener('DOMContentLoaded', () => {
-    // Header Scroll Effect
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            header.classList.add('scrolled');
-        } else {
-            header.classList.remove('scrolled');
-        }
-    });
-
-    // Intersection Observer for Reveal Animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.15
-    };
-
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('active');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.reveal').forEach(el => {
-        observer.observe(el);
-    });
+    showSlide(slideIndex);
 });
