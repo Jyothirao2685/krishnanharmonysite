@@ -328,6 +328,12 @@ section { padding: var(--spacing-section) 0; }
   gap: 40px;
 }
 
+.master-layout-reverse {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  gap: 40px;
+}
+
 .master-map img {
   width: 100%;
   border-radius: var(--radius-lg);
@@ -438,6 +444,6 @@ section { padding: var(--spacing-section) 0; }
 }
 
 @media (max-width: 1024px) {
-  .overview-grid, .status-area, .master-layout, .plan-grid { grid-template-columns: 1fr; }
+  .overview-grid, .status-area, .master-layout, .master-layout-reverse, .plan-grid { grid-template-columns: 1fr; }
   .facts-grid { grid-template-columns: repeat(3, 1fr); gap: 20px; }
 }
