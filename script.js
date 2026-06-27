@@ -1,3 +1,15 @@
+// Mobile Menu Toggle
+function toggleMenu() {
+    const nav = document.getElementById('navLinks');
+    nav.classList.toggle('active');
+}
+
+function closeMenu() {
+    if(window.innerWidth <= 768) {
+        document.getElementById('navLinks').classList.remove('active');
+    }
+}
+
 // Tab Functionality for Unit Plans
 function openTab(tabId) {
     // Remove active class from all buttons
@@ -25,9 +37,13 @@ function showSlide(index) {
     
     slides.forEach(slide => {
         slide.style.display = 'none';
+        slide.classList.remove('active-slide');
     });
     
     slides[slideIndex].style.display = 'block';
+    setTimeout(() => {
+        slides[slideIndex].classList.add('active-slide');
+    }, 50);
 }
 
 function moveHero(n) {

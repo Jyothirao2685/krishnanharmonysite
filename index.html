@@ -8,25 +8,19 @@
 </head>
 <body>
 
-    <!-- Sticky Side Buttons -->
-    <div class="sticky-sidebar">
-        <div class="sticky-btn">Enquire Now</div>
-        <div class="sticky-btn" style="background: #aebca5;">&#128222;</div>
-        <div class="sticky-btn" style="background: #8eab83;">&#9993;</div>
-    </div>
-
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
                 Symphony<br>Heights
             </div>
-            <nav class="nav-links">
-                <a href="#overview">Overview</a>
-                <a href="#amenities">Amenities</a>
-                <a href="#architecture">Architecture</a>
-                <a href="#plans">Unit Plans</a>
-                <a href="#contact">Contact</a>
+            <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()">&#9776;</button>
+            <nav class="nav-links" id="navLinks">
+                <a href="#overview" onclick="closeMenu()">Overview</a>
+                <a href="#amenities" onclick="closeMenu()">Amenities</a>
+                <a href="#architecture" onclick="closeMenu()">Architecture</a>
+                <a href="#plans" onclick="closeMenu()">Unit Plans</a>
+                <a href="#contact" onclick="closeMenu()">Contact</a>
             </nav>
         </div>
     </header>
