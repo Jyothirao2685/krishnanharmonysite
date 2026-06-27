@@ -452,6 +452,8 @@ section { padding: var(--spacing-section) 0; }
   /* Ensure image stacks first on tablet/mobile for all amenity layouts */
   .master-layout { display: flex; flex-direction: column; }
   .master-layout-reverse { display: flex; flex-direction: column-reverse; }
+  
+  .status-info { padding-right: 0; padding-bottom: 40px; }
 }
 
 @media (max-width: 768px) {
